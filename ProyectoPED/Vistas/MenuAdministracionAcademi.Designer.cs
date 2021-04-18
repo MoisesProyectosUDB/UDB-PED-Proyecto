@@ -43,6 +43,7 @@ namespace ProyectoPED.Vistas
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(25, 57);
             this.pictureBox1.Name = "pictureBox1";
@@ -65,6 +66,7 @@ namespace ProyectoPED.Vistas
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(260, 57);
             this.pictureBox2.Name = "pictureBox2";
@@ -72,6 +74,7 @@ namespace ProyectoPED.Vistas
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label2
             // 
@@ -86,6 +89,7 @@ namespace ProyectoPED.Vistas
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(477, 57);
             this.pictureBox3.Name = "pictureBox3";
@@ -93,6 +97,7 @@ namespace ProyectoPED.Vistas
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label3
             // 

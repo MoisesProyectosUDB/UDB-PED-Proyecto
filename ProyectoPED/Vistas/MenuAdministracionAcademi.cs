@@ -29,5 +29,17 @@ namespace ProyectoPED.Vistas
             AddUsario frmUser = new AddUsario();
             frmUser.ShowDialog();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            AddCarreras frmCarrera = new AddCarreras();
+            frmCarrera.ShowDialog();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AddMateria frmMateria = new AddMateria();
+            frmMateria.ShowDialog();
+        }
     }
 }
