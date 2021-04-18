@@ -1,4 +1,5 @@
 ﻿using ProyectoPED.Model.ValidacionLogin;
+using ProyectoPED.Vistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,12 +39,21 @@ namespace ProyectoPED
                 }
                 else
                 {
-                    Console.WriteLine("Exito");
+                    this.Hide();
+                    MenuAdministracionAcademi FrmAcedemi = new MenuAdministracionAcademi();
+                    FrmAcedemi.Show();
                 }
             }
 
             
 
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+                Application.Exit();
+            
         }
     }
 }
