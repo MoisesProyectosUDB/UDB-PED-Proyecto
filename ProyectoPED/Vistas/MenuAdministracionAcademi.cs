@@ -41,5 +41,11 @@ namespace ProyectoPED.Vistas
             AddMateria frmMateria = new AddMateria();
             frmMateria.ShowDialog();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            AddInscripcion frmInscripcion = new AddInscripcion();
+            frmInscripcion.ShowDialog();
+        }
     }
 }
