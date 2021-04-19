@@ -61,7 +61,8 @@ namespace ProyectoPED.Vistas.ProfeAD
        
         private void CreaABLinicial(string nameRaiz,  string hijotipo,string hijoNombre)
         {
-            raiz = new Arbol<String>(null, "PED941");//Se crea la Raiz papa
+
+            raiz = new Arbol<String>(null, nameRaiz.Substring(1, 6));//Se crea la Raiz papa
             Arbol <String> tipos = new Arbol<String>(raiz, hijotipo);//Se Crea  el nivel de tipo
             Arbol<String> nomAc = new Arbol<String>(tipos, hijoNombre);//Se crea eñ nivel de actividades
             tipos.agregarHijo(nomAc);
