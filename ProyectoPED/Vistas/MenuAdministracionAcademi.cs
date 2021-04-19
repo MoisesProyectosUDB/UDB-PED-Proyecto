@@ -47,5 +47,10 @@ namespace ProyectoPED.Vistas
             AddInscripcion frmInscripcion = new AddInscripcion();
             frmInscripcion.ShowDialog();
         }
+
+        private void MenuAdministracionAcademi_Load(object sender, EventArgs e)
+        {
+            label5.Text = Login.idUsuario;
+        }
     }
 }

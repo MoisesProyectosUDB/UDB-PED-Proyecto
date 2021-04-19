@@ -17,7 +17,7 @@ namespace ProyectoPED
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuAdministracionAcademi());
+            Application.Run(new Login());
         }
     }
 }

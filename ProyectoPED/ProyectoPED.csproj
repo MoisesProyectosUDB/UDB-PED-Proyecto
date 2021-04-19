@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\ConnectionDB.cs" />
+    <Compile Include="Estructuras\ABL\Arbol.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +60,7 @@
     <Compile Include="Model\Carreras\CarreraResponse.cs" />
     <Compile Include="Model\Carreras\CarreraRoot.cs" />
     <Compile Include="Model\Carreras\Carreras.cs" />
+    <Compile Include="Model\Funciones.cs" />
     <Compile Include="Model\Materias\Materias.cs" />
     <Compile Include="Model\Materias\MateriaRequest.cs" />
     <Compile Include="Model\Materias\MateriaResponse.cs" />
@@ -103,6 +105,18 @@
     <Compile Include="Vistas\MenuAdministracionAcademi.Designer.cs">
       <DependentUpon>MenuAdministracionAcademi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\MenuAdministracionProfe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\MenuAdministracionProfe.Designer.cs">
+      <DependentUpon>MenuAdministracionProfe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ProfeAD\AddActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ProfeAD\AddActividades.Designer.cs">
+      <DependentUpon>AddActividades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Xml\Serializer.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -130,6 +144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\MenuAdministracionAcademi.resx">
       <DependentUpon>MenuAdministracionAcademi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\MenuAdministracionProfe.resx">
+      <DependentUpon>MenuAdministracionProfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ProfeAD\AddActividades.resx">
+      <DependentUpon>AddActividades.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ArchivosDB\DiagramaUML.drawio">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -18,7 +18,7 @@ namespace ProyectoPED
         {
             InitializeComponent();
         }
-
+        internal static string idUsuario;
         private void button1_Click(object sender, EventArgs e)
         {
             ValidaCredenciales Vallogin = new ValidaCredenciales();
@@ -31,18 +31,41 @@ namespace ProyectoPED
             else 
             {
 
-                string Resultadologin = Vallogin.validarCredenciales(textBox1.Text, textBox2.Text);
-                if (Resultadologin != "000000")
+                LoginRoot Resultadologin = Vallogin.validarCredenciales(textBox1.Text, textBox2.Text);
+                if (Resultadologin != null)
                 {
-                    if (Resultadologin == "000001") { MessageBox.Show("Ocurrio Algun Error al Intentar Conectarse", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-                    if (Resultadologin == "000002") { errorProvider1.SetError(button1, "Credenciales Invalidas"); }
-                }
+                    if (Resultadologin.Response.Resultado != "1")
+                    {
+                        
+                        errorProvider1.SetError(button1, "Credenciales Invalidas");
+                    }
+                    else
+                    {
+
+                        idUsuario = textBox1.Text;
+                        if (Resultadologin.Response.TipoUsuario == "1")
+                        {
+                            this.Hide();
+                            MenuAdministracionAcademi FrmAcedemi = new MenuAdministracionAcademi();
+                            FrmAcedemi.Show();
+                        }
+                        if (Resultadologin.Response.TipoUsuario == "2")
+                        {
+                            this.Hide();
+                            MenuAdministracionProfe Frmprof= new MenuAdministracionProfe();
+                            Frmprof.Show();
+                        }
+
+                        
+                        
+
+                    }
+                } 
                 else
                 {
-                    this.Hide();
-                    MenuAdministracionAcademi FrmAcedemi = new MenuAdministracionAcademi();
-                    FrmAcedemi.Show();
+                    MessageBox.Show("Ocurrio Algun Error al Intentar Conectarse", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
             }
 
             

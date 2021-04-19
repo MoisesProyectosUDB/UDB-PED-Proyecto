@@ -39,5 +39,35 @@ namespace ProyectoPED.Model.CargarInfo
             da.Fill(Data);
             return Data;
         }
+
+        public DataTable CargarCarrerasporUsario(string valor)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("UDB_CargarCarrerasPorUsuario", ConnectionDB.GetConnectionString());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("@valor", SqlDbType.VarChar).Value = valor;
+            DataTable Data = new DataTable();
+            da.Fill(Data);
+            return Data;
+        }
+
+        public DataTable CargarMateriasporCarreraUsuario(string carnet,int idCarrera)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("UDB_CargarMateriasPorCarreraUsuario", ConnectionDB.GetConnectionString());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("@Carnet", SqlDbType.VarChar).Value = carnet;
+            da.SelectCommand.Parameters.Add("@idCarrera", SqlDbType.VarChar).Value = idCarrera;
+            DataTable Data = new DataTable();
+            da.Fill(Data);
+            return Data;
+        }
+
+        public DataTable CargarTipoActividades()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("UDB_CargaTipoActividades", ConnectionDB.GetConnectionString());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable Data = new DataTable();
+            da.Fill(Data);
+            return Data;
+        }
     }
 }

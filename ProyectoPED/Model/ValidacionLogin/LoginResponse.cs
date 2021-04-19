@@ -10,5 +10,6 @@ namespace ProyectoPED.Model.ValidacionLogin
     {
 
         public string Resultado { get; set; }
+        public string TipoUsuario { get; set; }
     }
 }

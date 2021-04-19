@@ -16,7 +16,7 @@ namespace ProyectoPED.Model.ValidacionLogin
         string procedure = "UDB_ValidacionLogin";
 
 
-        public  string validarCredenciales (string user,string pass) 
+        public LoginRoot validarCredenciales (string user,string pass) 
         {
             var loginRequestObj = new LoginRoot()
             {
@@ -37,16 +37,18 @@ namespace ProyectoPED.Model.ValidacionLogin
             }
             catch (Exception e)
             {
-                return "000001";
+                return null;
             }
             loginRequestObj  = Serializer<LoginRoot>.DeserializeString(sqlXml);
 
-            if (loginRequestObj.Response.Resultado == "1")
-            {
-                return "000000";
-            }
-            else { return "000002"; }
-            
+            //if (loginRequestObj.Response.Resultado == "1")
+            //{
+            //    return "000000";
+            //}
+            //else { return "000002"; }
+            return loginRequestObj;
+
+
 
         }
         
