@@ -18,9 +18,10 @@ namespace ProyectoPED.Vistas.AcademiAD
             //se llena combo de Carreras
 
             cmboxCarreras.DataSource = OpcionCargaCombox.CargarCarreras();
-
             cmboxCarreras.DisplayMember = "NombreCarrera";
             cmboxCarreras.ValueMember = "IDCarrera";
+            //se carga la tabla
+            ListarMaterias();
         }
 
 
@@ -44,6 +45,7 @@ namespace ProyectoPED.Vistas.AcademiAD
                     MessageBox.Show("Materia Agregada", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     limpiarCampos();
                 }
+                ListarMaterias();
             }
         }
 
@@ -53,6 +55,12 @@ namespace ProyectoPED.Vistas.AcademiAD
             textBox1.Clear();
             textBox2.Clear();
             errorProvider1.Clear();
+
+        }
+        private void ListarMaterias()
+        {
+            CargarTablas OpcionCargaTablas = new CargarTablas();
+            dataGridView1.DataSource = OpcionCargaTablas.CargarTablaMateriaCarrera();
 
         }
 

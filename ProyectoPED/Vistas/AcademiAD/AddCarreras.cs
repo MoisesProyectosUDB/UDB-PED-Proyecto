@@ -1,4 +1,5 @@
-﻿using ProyectoPED.Model.Carreras;
+﻿using ProyectoPED.Model.CargarInfo;
+using ProyectoPED.Model.Carreras;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,7 +38,7 @@ namespace ProyectoPED.Vistas.AcademiAD
                     MessageBox.Show("Carrera Agregada", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     limpiarCampos();
                 }
-
+                ListarCarreras();
             }
 
         }
@@ -48,6 +49,18 @@ namespace ProyectoPED.Vistas.AcademiAD
             textBox1.Clear();
             errorProvider1.Clear();
             
+        }
+
+        private void ListarCarreras()
+        {
+            CargarTablas OpcionCargaTablas = new CargarTablas();
+            dataGridView1.DataSource = OpcionCargaTablas.CargarTablaCarreras();
+
+        }
+
+        private void AddCarreras_Load(object sender, EventArgs e)
+        {
+            ListarCarreras();
         }
     }
 }

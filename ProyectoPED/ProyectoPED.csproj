@@ -56,6 +56,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\CargarInfo\CargarCombox.cs" />
+    <Compile Include="Model\CargarInfo\CargarTablas.cs" />
     <Compile Include="Model\Carreras\CarreraRequest.cs" />
     <Compile Include="Model\Carreras\CarreraResponse.cs" />
     <Compile Include="Model\Carreras\CarreraRoot.cs" />
@@ -172,10 +173,27 @@
     <Content Include="ArchivosDB\DonBosco_PED.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Imagenes\Iconos\Actividades.ico" />
+    <Content Include="Imagenes\Iconos\addUser.ico" />
+    <Content Include="Imagenes\Iconos\almacenar.ico" />
+    <Content Include="Imagenes\Iconos\Carrera.ico" />
+    <Content Include="Imagenes\Iconos\inscripcion.ico" />
+    <Content Include="Imagenes\Iconos\inscripcion2.ico" />
+    <Content Include="Imagenes\Iconos\ListadoMat.ico" />
     <Content Include="Imagenes\Iconos\Login.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Imagenes\Iconos\login1.ico" />
+    <Content Include="Imagenes\Iconos\Materia.ico" />
+    <Content Include="Imagenes\Iconos\Pass.ico" />
+    <Content Include="Imagenes\Iconos\tarea.ico" />
+    <Content Include="Imagenes\Iconos\udb.ico" />
+    <Content Include="Imagenes\Iconos\user.ico" />
+    <Content Include="Imagenes\Iconos\verarbo.ico" />
     <Content Include="Imagenes\img\agregar-usuario.png" />
+    <Content Include="Imagenes\img\carpeta.png" />
+    <Content Include="Imagenes\img\materia.png" />
+    <Content Include="Imagenes\img\udb.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

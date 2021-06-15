@@ -25,12 +25,12 @@ namespace ProyectoPED.Vistas.AcademiAD
         }
 
         CargarCombox OpcionCargaCombox= new CargarCombox();
+        
         private void AddUsario_Load(object sender, EventArgs e)
         {
             //se llena combo de estados
             
-            cmboxEstadoUser.DataSource = OpcionCargaCombox.CargarComboEstadoUser();
-        
+            cmboxEstadoUser.DataSource = OpcionCargaCombox.CargarComboEstadoUser();        
             cmboxEstadoUser.DisplayMember = "Descripcion";
             cmboxEstadoUser.ValueMember = "IDEstados";
            
@@ -38,10 +38,8 @@ namespace ProyectoPED.Vistas.AcademiAD
             cmboxRoles.DataSource = OpcionCargaCombox.CargarRoles();
             cmboxRoles.DisplayMember = "Descripcion";
             cmboxRoles.ValueMember = "IDRol";
-         
-
-
-
+            //se llena la tabla
+            ListarUsuarios();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -65,6 +63,7 @@ namespace ProyectoPED.Vistas.AcademiAD
                     MessageBox.Show("Usuario Agregado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     limpiarCampos();
                 }
+                ListarUsuarios();
             }
 
 
@@ -79,6 +78,13 @@ namespace ProyectoPED.Vistas.AcademiAD
             textBox3.Clear();
             textBox4.Clear();
             errorProvider1.Clear();
+        }
+
+        private void ListarUsuarios()
+        {
+            CargarTablas OpcionCargaTablas = new CargarTablas();
+            dataGridView1.DataSource = OpcionCargaTablas.CargarTablaUser();
+
         }
     }
 }
