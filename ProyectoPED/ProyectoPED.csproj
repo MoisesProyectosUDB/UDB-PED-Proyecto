@@ -62,6 +62,12 @@
     <Compile Include="Model\Carreras\CarreraRoot.cs" />
     <Compile Include="Model\Carreras\Carreras.cs" />
     <Compile Include="Model\Funciones.cs" />
+    <Compile Include="Model\Inscripcion\Carrera.cs" />
+    <Compile Include="Model\Inscripcion\Inscripcion.cs" />
+    <Compile Include="Model\Inscripcion\InscripcionRequest.cs" />
+    <Compile Include="Model\Inscripcion\InscripcionResponse.cs" />
+    <Compile Include="Model\Inscripcion\InscripcionRoot.cs" />
+    <Compile Include="Model\Inscripcion\Materia.cs" />
     <Compile Include="Model\Materias\Materias.cs" />
     <Compile Include="Model\Materias\MateriaRequest.cs" />
     <Compile Include="Model\Materias\MateriaResponse.cs" />

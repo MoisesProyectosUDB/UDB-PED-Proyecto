@@ -15,7 +15,7 @@ namespace ProyectoPED.Model.CargarInfo
 
         public DataTable CargarTablaUser()
         {
-            SqlDataAdapter da = new SqlDataAdapter("UDB_CargarEstudiantes", ConnectionDB.GetConnectionString());
+            SqlDataAdapter da = new SqlDataAdapter("UDB_CargarUserTable", ConnectionDB.GetConnectionString());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataTable Data = new DataTable();
             da.Fill(Data);
@@ -34,6 +34,24 @@ namespace ProyectoPED.Model.CargarInfo
         public DataTable CargarTablaCarreras()
         {
             SqlDataAdapter da = new SqlDataAdapter("UDB_CargaCarreras", ConnectionDB.GetConnectionString());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable Data = new DataTable();
+            da.Fill(Data);
+            return Data;
+        }
+
+        public DataTable CargarTablaInscrpcionProfesores()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("UDB_CargaMaestros", ConnectionDB.GetConnectionString());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable Data = new DataTable();
+            da.Fill(Data);
+            return Data;
+        }
+
+        public DataTable CargarTablaInscrpcionEstudiantes()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("UDB_CargarEstudiantes", ConnectionDB.GetConnectionString());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataTable Data = new DataTable();
             da.Fill(Data);
