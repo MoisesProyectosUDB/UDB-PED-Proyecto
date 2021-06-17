@@ -34,5 +34,11 @@ namespace ProyectoPED.Vistas
             AddActividades frmActi= new AddActividades();
             frmActi.ShowDialog();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            OrdenMaterias frmActi = new OrdenMaterias();
+            frmActi.ShowDialog();
+        }
     }
 }
