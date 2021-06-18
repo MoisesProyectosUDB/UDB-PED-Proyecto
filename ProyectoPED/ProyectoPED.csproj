@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Database\ConnectionDB.cs" />
     <Compile Include="Estructuras\ABL\Arbol.cs" />
+    <Compile Include="Estructuras\Grafos\Vertice.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

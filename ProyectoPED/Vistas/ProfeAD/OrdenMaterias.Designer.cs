@@ -127,11 +127,12 @@ namespace ProyectoPED.Vistas.ProfeAD
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Location = new System.Drawing.Point(390, 24);
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Cursor = System.Windows.Forms.Cursors.NoMove2D;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(390, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(559, 389);
+            this.panel1.Size = new System.Drawing.Size(559, 401);
             this.panel1.TabIndex = 1;
             this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
             // 

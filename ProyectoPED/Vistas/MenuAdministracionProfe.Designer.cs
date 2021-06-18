@@ -99,6 +99,7 @@ namespace ProyectoPED.Vistas
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(476, 57);
             this.pictureBox3.Name = "pictureBox3";

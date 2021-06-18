@@ -31,7 +31,7 @@ namespace ProyectoPED.Vistas.AcademiAD
                 if (Resultadologin != "000000")
                 {
                     if (Resultadologin == "000001") { MessageBox.Show("Ocurrio Algun Error al Intentar Conectarse", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-                    if (Resultadologin == "000003") { errorProvider1.SetError(button1, "Carrera ya Existe"); }
+                    if (Resultadologin == "000003") { errorProvider1.SetError(button1, "Error al Intentar Actualizar los Puntos"); }
                 }
                 else
                 {
