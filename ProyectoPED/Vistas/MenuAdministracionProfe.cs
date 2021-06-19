@@ -40,5 +40,11 @@ namespace ProyectoPED.Vistas
             OrdenMaterias frmActi = new OrdenMaterias();
             frmActi.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

@@ -14,6 +14,12 @@ namespace ProyectoPED.Model.Orden
 
         public string IdCarrera { get; set; }
 
+        public string IdMateriaOrigen { get; set; }
+
+        public string IdMateriaDestino { get; set; }
+
+        public string Peso { get; set; }
+
 
 
 

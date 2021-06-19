@@ -52,5 +52,10 @@ namespace ProyectoPED.Vistas
         {
             label5.Text = Login.idUsuario;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }  
     }
 }

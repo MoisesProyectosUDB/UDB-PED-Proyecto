@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [DonBosco_PED]    Script Date: 4/17/2021 2:19:31 PM ******/
+/****** Object:  Database [DonBosco_PED]    Script Date: 6/19/2021 1:25:37 AM ******/
 CREATE DATABASE [DonBosco_PED]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,10 +82,7 @@ ALTER DATABASE [DonBosco_PED] SET QUERY_STORE = OFF
 GO
 USE [DonBosco_PED]
 GO
-/****** Object:  Table [dbo].[Actividades]    Script Date: 4/17/2021 2:19:31 PM ******/
-USE [DonBosco_PED]
-GO
-/****** Object:  Table [dbo].[Actividades]    Script Date: 6/16/2021 4:09:05 PM ******/
+/****** Object:  Table [dbo].[Actividades]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -99,7 +96,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ActividadesMateria]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[ActividadesMateria]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -116,7 +113,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CarreraMateria]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[CarreraMateria]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -131,7 +128,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CarreraMateriaUsuario]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[CarreraMateriaUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -148,7 +145,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Carreras]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[Carreras]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -162,7 +159,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CarreraUsuario]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[CarreraUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -179,7 +176,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Ciclo]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[Ciclo]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -193,7 +190,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Estados]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[Estados]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -207,7 +204,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Materias]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[Materias]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -216,16 +213,16 @@ CREATE TABLE [dbo].[Materias](
 	[IDMateria] [int] IDENTITY(1,1) NOT NULL,
 	[NombreMateria] [varchar](255) NOT NULL,
 	[CodigoMateria] [varchar](25) NOT NULL,
-	[Codigo] INT NOT NULL,
-	[posicion_x] INT  NULL,
-	[posicion_Y] INT  NULL,
+	[Codigo] [int] NOT NULL,
+	[posicion_x] [int] NULL,
+	[posicion_Y] [int] NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[IDMateria] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[OrdenMaterias]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[OrdenMaterias]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -242,7 +239,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Roles]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[Roles]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -256,7 +253,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Usuarios]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -274,62 +271,6 @@ PRIMARY KEY CLUSTERED
 	[IDUsuario] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-GO
-SET IDENTITY_INSERT [dbo].[Actividades] ON 
-GO
-INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (1, N'Tareas')
-GO
-INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (2, N'Foros')
-GO
-INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (3, N'Cuestionarios')
-GO
-INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (4, N'Parciales')
-GO
-INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (5, N'Reuniones')
-GO
-SET IDENTITY_INSERT [dbo].[Actividades] OFF
-GO
-SET IDENTITY_INSERT [dbo].[Ciclo] ON 
-GO
-INSERT [dbo].[Ciclo] ([IDCiclo], [NombreCiclo]) VALUES (1, N'Ciclo I')
-GO
-INSERT [dbo].[Ciclo] ([IDCiclo], [NombreCiclo]) VALUES (2, N'Ciclo II')
-GO
-INSERT [dbo].[Ciclo] ([IDCiclo], [NombreCiclo]) VALUES (3, N'Ciclo III')
-GO
-SET IDENTITY_INSERT [dbo].[Ciclo] OFF
-GO
-SET IDENTITY_INSERT [dbo].[Estados] ON 
-GO
-INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (1, N'Activo')
-GO
-INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (2, N'Retirado')
-GO
-INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (3, N'Aprobado')
-GO
-INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (4, N'Re-PROBADO')
-GO
-INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (5, N'Inactivo')
-GO
-SET IDENTITY_INSERT [dbo].[Estados] OFF
-GO
-SET IDENTITY_INSERT [dbo].[Roles] ON 
-GO
-INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (1, N'Administrador')
-GO
-INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (2, N'Profesor')
-GO
-INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (3, N'Estudiante')
-GO
-INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (4, N'Invitado')
-GO
-SET IDENTITY_INSERT [dbo].[Roles] OFF
-GO
-SET IDENTITY_INSERT [dbo].[Usuarios] ON 
-GO
-INSERT [dbo].[Usuarios] ([IDUsuario], [NombreCompleto], [CorreoElectronico], [Password], [Estado], [IdRol], [Carnet]) VALUES (1, N'Luis Moises Castillo', N'moisesudb17@gmail.com', N'123456789', 1, 1, N'CA140174')
-GO
-SET IDENTITY_INSERT [dbo].[Usuarios] OFF
 GO
 ALTER TABLE [dbo].[CarreraMateriaUsuario] ADD  DEFAULT ((1)) FOR [IdEstado]
 GO
@@ -397,7 +338,7 @@ REFERENCES [dbo].[Roles] ([IDRol])
 GO
 ALTER TABLE [dbo].[Usuarios] CHECK CONSTRAINT [FK_UusarioRol]
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaCarreras]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaCarreras]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -406,7 +347,7 @@ Create procedure [dbo].[UDB_CargaCarreras]
 as
 select IDCarrera,NombreCarrera   from  Carreras;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaEstadosUsuarios]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaEstadosUsuarios]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -415,7 +356,7 @@ create procedure [dbo].[UDB_CargaEstadosUsuarios]
 as
 select IDEstados, Descripcion from Estados where IDEstados in(1,5)
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaMaestros]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaMaestros]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -429,7 +370,7 @@ inner join  Carreras d on a.IdCarrera=d.IDCarrera
 inner join  Materias e on b.IdMateria=e.IDMateria
 where c.IdRol=2;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarCarrerasPorUsuario]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarCarrerasPorUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -452,7 +393,7 @@ select  a.IDCarrera,a.NombreCarrera from Carreras a inner join CarreraUsuario b 
 where c.Carnet=@valor
 
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarEstudiantes]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarEstudiantes]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -466,7 +407,7 @@ inner join  Carreras d on a.IdCarrera=d.IDCarrera
 inner join  Materias e on b.IdMateria=e.IDMateria
 where c.IdRol=3;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -478,7 +419,7 @@ on a.IdCarrera=b.IDCarrera
 inner join Materias c on a.IdMateria=c.IDMateria
 group by  b.NombreCarrera,c.CodigoMateria,c.NombreMateria
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias2]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias2]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -487,22 +428,33 @@ Create procedure [dbo].[UDB_CargarMaterias2]
 as
 select NombreMateria, CodigoMateria from Materias
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarrera]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarrera]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[UDB_CargarMateriasPorCarrera] 
-@idCarrera varchar(250)
+@idCarrera varchar(250),@g int
  AS 
  SET XACT_ABORT ON
- select  b.IDMateria,CONCAT('(',b.CodigoMateria,')', b.NombreMateria) as 'NombreMateria'  from CarreraMateria a inner join Materias b 
+ if @g=1
+ begin
+  select  B.Codigo AS 'IDMateria' ,CONCAT('(',b.CodigoMateria,')', b.NombreMateria) as 'NombreMateria'  from CarreraMateria a inner join Materias b 
+ on a.IdMateria=b.IDMateria
+ inner join Carreras  c on a.IdCarrera=c.IDCarrera
+ where a.IdCarrera=@idCarrera AND posicion_x IS NOT NULL AND posicion_Y IS NOT NULL;
+ end
+ else 
+ begin
+  select  b.IDMateria AS 'IDMateria',CONCAT('(',b.CodigoMateria,')', b.NombreMateria) as 'NombreMateria'  from CarreraMateria a inner join Materias b 
  on a.IdMateria=b.IDMateria
  inner join Carreras  c on a.IdCarrera=c.IDCarrera
  where a.IdCarrera=@idCarrera;
+ end
+
 
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarreraUsuario]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarreraUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -527,7 +479,7 @@ set @Resultado=0;
 
 where a.Carnet=@Carnet and b.IdCarrera=@idCarrera and  d.Idestado=1
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaRoles]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaRoles]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -536,7 +488,7 @@ create procedure [dbo].[UDB_CargaRoles]
 as
 select IDRol, Descripcion from Roles  
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarUserTable]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarUserTable]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -545,7 +497,7 @@ Create procedure [dbo].[UDB_CargarUserTable]
 as
 select a.NombreCompleto,a.Carnet,a.CorreoElectronico,b.Descripcion from Usuarios a inner join  Roles b on a.IdRol=b.IDRol
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaTipoActividades]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaTipoActividades]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -554,7 +506,7 @@ Create procedure [dbo].[UDB_CargaTipoActividades]
 as
 select   IDActividades, NombreActividad from Actividades
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaUsuariosAll]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaUsuariosAll]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -563,7 +515,7 @@ Create procedure [dbo].[UDB_CargaUsuariosAll]
 as
 select   IDUsuario, NombreCompleto  from   Usuarios;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CarreraAdd]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CarreraAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -653,7 +605,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_InscripcionAdd]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_InscripcionAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -793,12 +745,124 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_MateriaAdd]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_ListaMaterias]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-Create PROCEDURE [dbo].[UDB_MateriaAdd] 
+Create PROCEDURE [dbo].[UDB_ListaMaterias] 
+ @SolicitudXML nText  
+ AS 
+ SET XACT_ABORT ON
+
+
+-- DATOS DE CONTROL DEL XML
+DECLARE @iDoc INT    
+DECLARE @ErrorSave INT 
+DECLARE @nReg INT  
+
+
+SET @ErrorSave = 0   
+--VARIABLES DE ENTRADA DEL XML
+DECLARE @IdUsuario int
+DECLARE @IdCarrera int
+DECLARE @IdEstado  int
+DECLARE @Avance    int
+DECLARE @IdMateria int
+DECLARE @IdCiclo   int
+Declare @CarreraUsuario int
+
+DECLARE @Resultado int
+
+
+
+
+--Carga el Xml que recibe en la variable    
+EXEC sp_xml_preparedocument @iDoc OUTPUT, @solicitudXML /*=
+'<Root>
+	<Request>
+			<IdCarrera>1</IdCarrera>
+	</Request>
+	<Response>
+		<Resultado/>
+	</Response>
+</Root>'*/
+
+IF (@@ERROR <> 0)  
+SET @ErrorSave = @@ERROR 
+SELECT @IdCarrera=IdCarrera
+FROM OpenXML(@iDoc,'//Root/Request')
+WITH ( 
+	   IdCarrera int 'IdCarrera'  
+	  );
+
+set @Resultado=0;
+ 
+
+ 
+
+-- select @IdCarrera
+
+------------------------------------------------------------------------------
+
+
+SELECT 1						AS Tag,   
+NULL							AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+NULL							AS [Response!3!Resultado!element], 
+NULL							AS [Materia!4!codigo!element],
+NULL							AS [Materia!4!x!element],
+NULL							AS [Materia!4!y!element]
+
+UNION ALL
+SELECT 2						AS Tag,   
+1								AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+NULL							AS [Response!3!Resultado!element],
+NULL							AS [Materia!4!codigo!element],
+NULL							AS [Materia!4!x!element],
+NULL							AS [Materia!4!y!element]
+
+UNION ALL
+SELECT 3						AS Tag,   
+1								AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+@Resultado							AS [Response!3!Resultado!element],
+NULL							AS [Materia!4!codigo!element],
+NULL							AS [Materia!4!x!element],
+NULL							AS [Materia!4!y!element]
+ 
+UNION ALL
+SELECT 4						AS Tag,   
+3								AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+NULL							AS [Response!3!Resultado!element],
+Codigo							AS [Materia!4!codigo!element],
+posicion_x							AS [Materia!4!x!element],
+posicion_y							AS [Materia!4!y!element]
+from Materias a inner join CarreraMateria b on a.IDMateria=b.IdMateria where b.IdCarrera=@IdCarrera
+
+
+
+FOR XML EXPLICIT
+------------------------------------------------------------------------------
+
+--Libera de Memoria el documento XML    
+EXEC sp_xml_removedocument @iDoc    
+IF (@@ERROR <> 0)    
+SET @ErrorSave = @@ERROR  
+RETURN @ErrorSave
+GO
+/****** Object:  StoredProcedure [dbo].[UDB_MateriaAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[UDB_MateriaAdd] 
  @SolicitudXML nText  
  AS 
  SET XACT_ABORT ON
@@ -836,7 +900,10 @@ WITH ( NombreMateria varchar(250) 'NombreMateria',
 
 set @Resultado=0;
 set @Codigo=(select  isnull(max(codigo),0) from Materias)
-if @Codigo<>0 set @Codigo=@Codigo+1;
+if exists(select  1 from Materias where Codigo=0)
+Begin
+set @Codigo=@Codigo+1;
+End
 
 if exists(select 1 from Materias where  CodigoMateria=@CodigoMateria) 
 Begin
@@ -900,7 +967,202 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_UserAdd]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_MateriaUpdate]    Script Date: 6/19/2021 1:25:38 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[UDB_MateriaUpdate] 
+ @SolicitudXML nText  
+ AS 
+ SET XACT_ABORT ON
+
+
+-- DATOS DE CONTROL DEL XML
+DECLARE @iDoc INT    
+DECLARE @ErrorSave INT 
+DECLARE @nReg INT  
+
+
+SET @ErrorSave = 0   
+--VARIABLES DE ENTRADA DEL XML
+DECLARE @posicion_x int
+DECLARE @posicion_y int
+DECLARE @IdCarrera int
+DECLARE @IdMateria int
+DECLARE @Codigo int
+DECLARE @Resultado int
+
+
+
+
+--Carga el Xml que recibe en la variable    
+EXEC sp_xml_preparedocument @iDoc OUTPUT, @solicitudXML --='<Root><Request><NombreMateria></NombreMateria><CodigoMateria></CodigoMateria><IdCarrera></IdCarrera></Request><Response><Resultado></Resultado></Response></Root>'
+IF (@@ERROR <> 0)  
+SET @ErrorSave = @@ERROR 
+SELECT @posicion_x = posicion_x,@posicion_y=posicion_y,@IdCarrera=IdCarrera
+FROM OpenXML(@iDoc,'//Root/Request')
+WITH ( posicion_x  int 'posicion_x',
+	   posicion_y  int 'posicion_y',
+	   IdCarrera int 'IdCarrera'
+    
+	  )
+
+set @Resultado=0;
+ 
+
+if exists(select 1 from Materias where   IDMateria=@IdCarrera and posicion_x is null and posicion_Y is null) 
+Begin
+update Materias set posicion_x=@posicion_x, posicion_y =@posicion_y where IDMateria=@IdCarrera;
+set  @Resultado=1;
+End
+else
+begin
+set  @Resultado=2;
+end
+
+
+
+
+------------------------------------------------------------------------------
+
+
+SELECT 1						AS Tag,   
+NULL							AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+NULL							AS [Response!3!Resultado!element]
+
+UNION ALL
+SELECT 2						AS Tag,   
+1								AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+NULL							AS [Response!3!Resultado!element]
+
+UNION ALL
+SELECT 3						AS Tag,   
+1								AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+@Resultado						AS [Response!3!Resultado!element]
+
+
+
+FOR XML EXPLICIT
+------------------------------------------------------------------------------
+
+--Libera de Memoria el documento XML    
+EXEC sp_xml_removedocument @iDoc    
+IF (@@ERROR <> 0)    
+SET @ErrorSave = @@ERROR  
+RETURN @ErrorSave
+GO
+/****** Object:  StoredProcedure [dbo].[UDB_OrdenADD]    Script Date: 6/19/2021 1:25:38 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[UDB_OrdenADD] 
+ @SolicitudXML nText  
+ AS 
+ SET XACT_ABORT ON
+
+
+-- DATOS DE CONTROL DEL XML
+DECLARE @iDoc INT    
+DECLARE @ErrorSave INT 
+DECLARE @nReg INT  
+
+
+SET @ErrorSave = 0   
+--VARIABLES DE ENTRADA DEL XML
+DECLARE @IdMateriaOrigen  int
+DECLARE @IdMateriaDestino int
+DECLARE @Peso int
+DECLARE @IdMateria int
+ 
+DECLARE @Resultado int
+
+
+
+
+--Carga el Xml que recibe en la variable    
+EXEC sp_xml_preparedocument @iDoc OUTPUT, @solicitudXML --=''
+IF (@@ERROR <> 0)  
+SET @ErrorSave = @@ERROR 
+SELECT @IdMateriaOrigen= IdMateriaOrigen,@IdMateriaDestino=IdMateriaDestino,@Peso=Peso
+FROM OpenXML(@iDoc,'//Root/Request')
+WITH ( IdMateriaOrigen int 'IdMateriaOrigen',
+	   IdMateriaDestino int 'IdMateriaDestino',
+	   Peso int 'Peso'	   
+	  )
+
+set @Resultado=0;
+ 
+if exists(select 1 from OrdenMaterias where  IdMateriaOrigen=@IdMateriaOrigen and  IdMateriaDestino=@IdMateriaDestino) 
+Begin
+set @Resultado=2;
+End
+ELSE
+Begin
+set @IdMateria=(select  isnull(max(IdMateria),0) from OrdenMaterias)
+if exists(select  1 from OrdenMaterias where  IdMateria=0)
+Begin
+set @IdMateria=@IdMateria+1;
+End
+
+insert into OrdenMaterias ( IdMateria,IdMateriaOrigen,IdMateriaDestino,Peso)
+values(@IdMateria,@IdMateriaOrigen,@IdMateriaDestino,@Peso);
+
+	if @@ROWCOUNT>0
+	Begin
+		set @Resultado=1;
+	End
+	else
+	Begin
+		set @Resultado=0;
+	End
+End
+
+
+
+
+------------------------------------------------------------------------------
+
+
+SELECT 1						AS Tag,   
+NULL							AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+NULL							AS [Response!3!Resultado!element]
+
+UNION ALL
+SELECT 2						AS Tag,   
+1								AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+NULL							AS [Response!3!Resultado!element]
+
+UNION ALL
+SELECT 3						AS Tag,   
+1								AS Parent,   
+NULL							AS [Root!1!ID],  
+NULL							AS [Request!2!ID],  
+@Resultado						AS [Response!3!Resultado!element]
+
+
+
+FOR XML EXPLICIT
+------------------------------------------------------------------------------
+
+--Libera de Memoria el documento XML    
+EXEC sp_xml_removedocument @iDoc    
+IF (@@ERROR <> 0)    
+SET @ErrorSave = @@ERROR  
+RETURN @ErrorSave
+GO
+/****** Object:  StoredProcedure [dbo].[UDB_UserAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1003,7 +1265,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_ValidacionLogin]    Script Date: 6/16/2021 4:09:06 PM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_ValidacionLogin]    Script Date: 6/19/2021 1:25:38 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1088,4 +1350,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-
+USE [master]
+GO
+ALTER DATABASE [DonBosco_PED] SET  READ_WRITE 
+GO

@@ -48,6 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\ConnectionDB.cs" />
+    <Compile Include="Estructuras\Grafos\Arco.cs" />
+    <Compile Include="Estructuras\Grafos\Dijkstra.cs" />
+    <Compile Include="Vistas\ProfeAD\DonBosco_PED.cs">
+      <DependentUpon>DonBosco_PED.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ProfeAD\DonBosco_PED.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DonBosco_PED.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras\ABL\Arbol.cs" />
     <Compile Include="Estructuras\Grafos\Vertice.cs" />
     <Compile Include="Login.cs">
@@ -174,6 +184,17 @@
     </EmbeddedResource>
     <None Include="ArchivosDB\DiagramaUML.drawio">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Vistas\ProfeAD\DonBosco_PED.xsc">
+      <DependentUpon>DonBosco_PED.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\ProfeAD\DonBosco_PED.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DonBosco_PED.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vistas\ProfeAD\DonBosco_PED.xss">
+      <DependentUpon>DonBosco_PED.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

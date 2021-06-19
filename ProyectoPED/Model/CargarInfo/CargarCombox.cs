@@ -84,6 +84,18 @@ namespace ProyectoPED.Model.CargarInfo
             SqlDataAdapter da = new SqlDataAdapter("UDB_CargarMateriasPorCarrera", ConnectionDB.GetConnectionString());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             da.SelectCommand.Parameters.Add("@idCarrera", SqlDbType.VarChar).Value = idCarrera;
+            da.SelectCommand.Parameters.Add("@g", SqlDbType.Int).Value = 0;
+            DataTable Data = new DataTable();
+            da.Fill(Data);
+            return Data;
+        }
+
+        public DataTable CargarMateriasporCarreraG(int idCarrera,int g=1)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("UDB_CargarMateriasPorCarrera", ConnectionDB.GetConnectionString());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("@idCarrera", SqlDbType.VarChar).Value = idCarrera;
+            da.SelectCommand.Parameters.Add("@g", SqlDbType.Int).Value = g;
             DataTable Data = new DataTable();
             da.Fill(Data);
             return Data;

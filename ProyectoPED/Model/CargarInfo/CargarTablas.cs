@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace ProyectoPED.Model.CargarInfo
 {
@@ -56,6 +57,36 @@ namespace ProyectoPED.Model.CargarInfo
             DataTable Data = new DataTable();
             da.Fill(Data);
             return Data;
+        }
+
+        public String  CargarMaterias(string consultaCreacionXml)
+        {
+            string sqlXml;
+            using (SqlConnection connection = new SqlConnection(ConnectionDB.GetConnectionString()))
+            {
+                string procedure = "UDB_ListaMaterias";
+
+                SqlCommand command = new SqlCommand
+                {
+                    CommandText = procedure,
+                    CommandType = CommandType.StoredProcedure,
+                    Connection = connection
+                };
+
+                command.Parameters.Add(new SqlParameter("@SolicitudXML", consultaCreacionXml));
+                connection.Open();
+
+                XmlReader reader;
+                reader = command.ExecuteXmlReader();
+
+                reader.MoveToContent();
+                sqlXml = reader.ReadOuterXml();
+
+                connection.Close();
+
+            }
+
+            return sqlXml;
         }
     }
 }
