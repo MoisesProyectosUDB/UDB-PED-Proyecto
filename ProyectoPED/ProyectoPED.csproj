@@ -214,28 +214,68 @@
     <Content Include="ArchivosDB\DonBosco_PED.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Imagenes\Iconos\Actividades.ico" />
-    <Content Include="Imagenes\Iconos\addUser.ico" />
-    <Content Include="Imagenes\Iconos\almacenar.ico" />
-    <Content Include="Imagenes\Iconos\Carrera.ico" />
-    <Content Include="Imagenes\Iconos\inscripcion.ico" />
-    <Content Include="Imagenes\Iconos\inscripcion2.ico" />
-    <Content Include="Imagenes\Iconos\ListadoMat.ico" />
+    <Content Include="Imagenes\Iconos\Actividades.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\addUser.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\almacenar.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\Carrera.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\inscripcion.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\inscripcion2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\ListadoMat.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Imagenes\Iconos\Login.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Imagenes\Iconos\login1.ico" />
-    <Content Include="Imagenes\Iconos\Materia.ico" />
-    <Content Include="Imagenes\Iconos\Pass.ico" />
-    <Content Include="Imagenes\Iconos\tarea.ico" />
-    <Content Include="Imagenes\Iconos\udb.ico" />
-    <Content Include="Imagenes\Iconos\user.ico" />
-    <Content Include="Imagenes\Iconos\verarbo.ico" />
-    <Content Include="Imagenes\img\agregar-usuario.png" />
-    <Content Include="Imagenes\img\carpeta.png" />
-    <Content Include="Imagenes\img\materia.png" />
-    <Content Include="Imagenes\img\orden.png" />
-    <Content Include="Imagenes\img\udb.png" />
+    <Content Include="Imagenes\Iconos\login1.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\Materia.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\Pass.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\tarea.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\udb.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\user.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\Iconos\verarbo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\img\agregar-usuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\img\carpeta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\img\materia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\img\orden.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\img\udb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VideosDemostrativos\VideoDemostrativoProyectoFinal1.mp4" />
+    <Content Include="VideosDemostrativos\VideoDemostrativoProyectoFinal2.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
