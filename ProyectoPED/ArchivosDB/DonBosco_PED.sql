@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [DonBosco_PED]    Script Date: 6/19/2021 1:25:37 AM ******/
+/****** Object:  Database [DonBosco_PED]    Script Date: 6/20/2021 8:33:39 PM ******/
 CREATE DATABASE [DonBosco_PED]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [DonBosco_PED] SET QUERY_STORE = OFF
 GO
 USE [DonBosco_PED]
 GO
-/****** Object:  Table [dbo].[Actividades]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[Actividades]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -96,7 +96,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ActividadesMateria]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[ActividadesMateria]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -113,7 +113,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CarreraMateria]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[CarreraMateria]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -128,7 +128,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CarreraMateriaUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[CarreraMateriaUsuario]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -145,7 +145,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Carreras]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[Carreras]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -159,7 +159,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CarreraUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[CarreraUsuario]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -176,7 +176,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Ciclo]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[Ciclo]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -190,7 +190,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Estados]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[Estados]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -204,7 +204,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Materias]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[Materias]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -222,7 +222,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[OrdenMaterias]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[OrdenMaterias]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -239,7 +239,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Roles]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[Roles]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -253,7 +253,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Usuarios]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -271,6 +271,62 @@ PRIMARY KEY CLUSTERED
 	[IDUsuario] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Actividades] ON 
+GO
+INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (1, N'Tareas')
+GO
+INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (2, N'Foros')
+GO
+INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (3, N'Cuestionarios')
+GO
+INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (4, N'Parciales')
+GO
+INSERT [dbo].[Actividades] ([IDActividades], [NombreActividad]) VALUES (5, N'Reuniones')
+GO
+SET IDENTITY_INSERT [dbo].[Actividades] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Ciclo] ON 
+GO
+INSERT [dbo].[Ciclo] ([IDCiclo], [NombreCiclo]) VALUES (1, N'Ciclo I')
+GO
+INSERT [dbo].[Ciclo] ([IDCiclo], [NombreCiclo]) VALUES (2, N'Ciclo II')
+GO
+INSERT [dbo].[Ciclo] ([IDCiclo], [NombreCiclo]) VALUES (3, N'Ciclo III')
+GO
+SET IDENTITY_INSERT [dbo].[Ciclo] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Estados] ON 
+GO
+INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (1, N'Activo')
+GO
+INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (2, N'Retirado')
+GO
+INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (3, N'Aprobado')
+GO
+INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (4, N'Re-PROBADO')
+GO
+INSERT [dbo].[Estados] ([IDEstados], [Descripcion]) VALUES (5, N'Inactivo')
+GO
+SET IDENTITY_INSERT [dbo].[Estados] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Roles] ON 
+GO
+INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (1, N'Administrador')
+GO
+INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (2, N'Profesor')
+GO
+INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (3, N'Estudiante')
+GO
+INSERT [dbo].[Roles] ([IDRol], [Descripcion]) VALUES (4, N'Invitado')
+GO
+SET IDENTITY_INSERT [dbo].[Roles] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Usuarios] ON 
+GO
+INSERT [dbo].[Usuarios] ([IDUsuario], [NombreCompleto], [CorreoElectronico], [Password], [Estado], [IdRol], [Carnet]) VALUES (1, N'Luis Moises Castillo', N'moisesudb17@gmail.com', N'123456789', 1, 1, N'CA140174')
+GO
+SET IDENTITY_INSERT [dbo].[Usuarios] OFF
 GO
 ALTER TABLE [dbo].[CarreraMateriaUsuario] ADD  DEFAULT ((1)) FOR [IdEstado]
 GO
@@ -338,7 +394,7 @@ REFERENCES [dbo].[Roles] ([IDRol])
 GO
 ALTER TABLE [dbo].[Usuarios] CHECK CONSTRAINT [FK_UusarioRol]
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaCarreras]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaCarreras]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -347,7 +403,7 @@ Create procedure [dbo].[UDB_CargaCarreras]
 as
 select IDCarrera,NombreCarrera   from  Carreras;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaEstadosUsuarios]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaEstadosUsuarios]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -356,7 +412,7 @@ create procedure [dbo].[UDB_CargaEstadosUsuarios]
 as
 select IDEstados, Descripcion from Estados where IDEstados in(1,5)
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaMaestros]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaMaestros]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -370,7 +426,7 @@ inner join  Carreras d on a.IdCarrera=d.IDCarrera
 inner join  Materias e on b.IdMateria=e.IDMateria
 where c.IdRol=2;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarCarrerasPorUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarCarrerasPorUsuario]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -393,7 +449,7 @@ select  a.IDCarrera,a.NombreCarrera from Carreras a inner join CarreraUsuario b 
 where c.Carnet=@valor
 
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarEstudiantes]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarEstudiantes]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -407,7 +463,7 @@ inner join  Carreras d on a.IdCarrera=d.IDCarrera
 inner join  Materias e on b.IdMateria=e.IDMateria
 where c.IdRol=3;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -419,7 +475,7 @@ on a.IdCarrera=b.IDCarrera
 inner join Materias c on a.IdMateria=c.IDMateria
 group by  b.NombreCarrera,c.CodigoMateria,c.NombreMateria
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias2]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMaterias2]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -428,7 +484,7 @@ Create procedure [dbo].[UDB_CargarMaterias2]
 as
 select NombreMateria, CodigoMateria from Materias
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarrera]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarrera]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -454,7 +510,7 @@ CREATE PROCEDURE [dbo].[UDB_CargarMateriasPorCarrera]
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarreraUsuario]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarMateriasPorCarreraUsuario]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -479,7 +535,7 @@ set @Resultado=0;
 
 where a.Carnet=@Carnet and b.IdCarrera=@idCarrera and  d.Idestado=1
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaRoles]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaRoles]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -488,7 +544,7 @@ create procedure [dbo].[UDB_CargaRoles]
 as
 select IDRol, Descripcion from Roles  
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargarUserTable]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargarUserTable]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -497,7 +553,7 @@ Create procedure [dbo].[UDB_CargarUserTable]
 as
 select a.NombreCompleto,a.Carnet,a.CorreoElectronico,b.Descripcion from Usuarios a inner join  Roles b on a.IdRol=b.IDRol
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaTipoActividades]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaTipoActividades]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -506,7 +562,7 @@ Create procedure [dbo].[UDB_CargaTipoActividades]
 as
 select   IDActividades, NombreActividad from Actividades
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CargaUsuariosAll]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CargaUsuariosAll]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -515,7 +571,7 @@ Create procedure [dbo].[UDB_CargaUsuariosAll]
 as
 select   IDUsuario, NombreCompleto  from   Usuarios;
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_CarreraAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_CarreraAdd]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -605,7 +661,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_InscripcionAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_InscripcionAdd]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -745,7 +801,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_ListaMaterias]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_ListaMaterias]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -857,7 +913,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_MateriaAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_MateriaAdd]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -967,7 +1023,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_MateriaUpdate]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_MateriaUpdate]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1058,7 +1114,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_OrdenADD]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_OrdenADD]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1162,7 +1218,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_UserAdd]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_UserAdd]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1265,7 +1321,7 @@ IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR  
 RETURN @ErrorSave
 GO
-/****** Object:  StoredProcedure [dbo].[UDB_ValidacionLogin]    Script Date: 6/19/2021 1:25:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[UDB_ValidacionLogin]    Script Date: 6/20/2021 8:33:39 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
